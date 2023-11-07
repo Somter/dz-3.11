@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #646464;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .galery {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .name {
+            color: white;
+            font-weight: bold;
+            margin-bottom: 0;
+            font-size: 4.5vh;
+        }
+
+        .name-profession {
+            margin-top: 0.1%;
+            color: #929290;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        header ul li {
+            display: inline-block;
+            color: white;
+            margin-left: 1em;
+        }
+
+
+        .me_information {
+            margin-top: 5%;
+            display: flex;
+        }
+
+        @media (max-width: 700px) {
+            .me_information {
+                flex-direction: column;
+            }
+        }
+
+
+        .me_information div div {
+            display: flex;
+            color: #c4c3c3;
+            margin-left: 2em;
+            margin-top: 0.5em;
+
+        }
+
+        .me_information div div:hover {
+            color: white;
+            font-size: 1.01em;
+        }
+
+        .photo {
+            border: 5px solid white;
+        }
+
+        .photo:hover {
+            box-shadow: 0px 0px 5px white;
+        }
+
+        .rows_photo_1 {
+            display: flex;
+            margin-top: 5%;
+        }
+
+        .photo_2 {
+            border: 5px solid white;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        .photo_2:hover .photo-text {
+            display: block;
+        }
+
+        .photo-text {
+            display: none;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            width: 70%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            opacity: 0.7;
+            color: black;
+            padding: 10px;
+        }
+
+        .photo-footer{
+            width: 15%;
+            border: 5px solid white;
+            margin-left: 0.4%;
+            margin-top: 1em;
+        }
+        
+        .photo-footer:hover{
+           opacity: 0.5;
+           background-color: white;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="galery">
+        <header>
+            <div style="display: flex; flex-direction: column;">
+                <p class="name">Julia Jacodson</p>
+                <p class="name-profession">The Photographer</p>
+            </div>
+
+            <ul>
+                <li>About</li>
+                <li>Works</li>
+                <li>Instagram</li>
+            </ul>
+        </header>
+
+        <div style="text-align: center; color: #a8a8a7; font-size: 2em;">About me</div>
+        <div class="me_information">
+            <img class="photo" src="levi-stute-5n9WjhzLHsQ-unsplash.jpg" width="20%" height="20%">
+            <div>
+
+                <div style="color: white; font-size: 1.01em;">
+                    <p>My name is Julia Jacodson</p>
+                </div>
+
+                <div>
+                    <p>i am Photographerwho likes everything - <br>
+                        nature, people amd travel</p>
+                </div>
+
+                <div>
+                    <p>if you like mu photos, call or write me.</p>
+                </div>
+
+                <div>
+                    <p>Email: photo.jacobson@gmail.com</p>
+                </div>
+
+                <div>
+                    <p>Phone: +01(111) 333-55-77</p>
+                </div>
+
+            </div>
+
+            <div style="margin-left: 5%;">
+                <div style="margin-top: 2%;">
+                    <p>- 200+ happy clients</p>
+                </div>
+
+                <div style="margin-top: 2%;">
+                    <p>- 120 portrait shoots</p>
+                </div>
+
+                <div style="margin-top: -5%;">
+                    <p>- 600+ nature shoots</p>
+                </div>
+
+                <div style="margin-top: 1%;">
+                    <p>- 1000+ wedding shots</p>
+                </div>
+
+                <div style="margin-top: 2%;">
+                    <p>- 12 countries visited</p>
+                </div>
+
+                <div style="margin-top: 0%;">
+                    <p>- 600+ cofee </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; color: #a8a8a7; font-size: 2em;">My Last Works</div>
+        <div>
+            <div class="rows_photo_1">
+                <div class="photo_2">
+                    <img src="tim-schmidbauer-ZT02GYpC1iQ-unsplash.jpg" width="100%" height="100%">
+                    <div class="photo-text">
+                        <p>Photo 1</p>
+                    </div>
+                </div>
+
+
+                <div class="photo_2">
+                    <img src="neom-q_v8G3Y-mrA-unsplash.jpg" width="100%" height="100%">
+                    <div class="photo-text">
+                        <p>Photo 2</p>
+                    </div>
+                </div>
+
+                <div class="photo_2">
+                    <img src="mario-von-rotz-0gfdSWav8RQ-unsplash.jpg" width="100%" height="100%">
+                    <div class="photo-text">
+                        <p>Photo 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rows_photo_1">
+                <div class="photo_2">
+                    <img src="jack-dong-_EwHwP8fjlI-unsplash.jpg" width="100%" height="100%">
+                    <div class="photo-text">
+                        <p>Photo 4</p>
+                    </div>
+                </div>
+                <div class="photo_2">
+                    <img src="neom-x-F7S_lqN2U-unsplash (1).jpg" width="100%" height="100%">
+                    <div class="photo-text">
+                        <p>Photo 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo_2" style="margin-top: 1em;">
+                <img src="aboodi-vesakaran-9Tb6kRz7QoA-unsplash.jpg" width="100%" height="80%">
+                <div class="photo-text">
+                    <p>Photo 6</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; color: #a8a8a7; font-size: 2em;">fallow me on Instagram</div>
+
+        <div class="footer">
+                <img class="photo-footer" src="toma-georgian-mihai-FYFgq0_9nnw-unsplash.jpg" width="20%">
+                <img class="photo-footer" src="neom-CkOVB0H97kc-unsplash.jpg" width="20%">
+                <img class="photo-footer" src="tim-mossholder-9-42RY7FgKw-unsplash.jpg" width="20%">
+                <img class="photo-footer" src="aboodi-vesakaran-9Tb6kRz7QoA-unsplash.jpg" width="20%">   
+                <img class="photo-footer" src="neom-x-F7S_lqN2U-unsplash (1).jpg" width="20%">
+                <img class="photo-footer" src="tim-schmidbauer-ZT02GYpC1iQ-unsplash.jpg" width="20%">
+          
+
+        </div>
+
+    </div>
+</body>
+
+</html>
